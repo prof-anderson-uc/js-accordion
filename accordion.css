@@ -1,0 +1,68 @@
+body {
+  background-color: cornsilk;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  border: 2px solid silver;
+}
+
+/* Accordion button 
+---------------------------*/
+.accordion-button {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: left;
+  padding: 1rem 0.5rem;
+  background-color: #eee;
+  border: 1px solid silver;
+  cursor: pointer;
+  width: 100%;
+  margin-top: .5rem;
+  transition: all 1s ease;
+}
+
+.accordion-button:hover {
+  background-color: silver;
+}
+
+/* Arrow styling 
+---------------------------*/
+.accordion-arrow {
+  display: inline-block;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* Rotate arrow when open 
+---------------------------*/
+.accordion-button.open .accordion-arrow {
+  transform: rotate(90deg);
+}
+
+
+/* Accordion content 
+---------------------------*/
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  border: 1px solid silver;
+  border-top: none;
+  padding: 0 1rem;
+  transition: max-height 0.5s ease;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/* Open state 
+---------------------------*/
+.accordion-content.open {
+  max-height: 200px;
+  padding: 1rem;
+}
