@@ -1,19 +1,19 @@
 // find all accordion buttons
-var buttons = document.querySelectorAll(".accordion-button");
+var buttons = 
 
 // loop through each button
-buttons.forEach(function(button){
+buttons.forEach(function(){
 
-  button.onclick = function(){
+   = function(){
 
     // find the content that comes after the button
-    var content = this.nextElementSibling;
+    var content = 
 
     // toggle the open class on the content
-    content.classList.toggle("open");
+    
 
     // rotate the arrow
-    this.classList.toggle("open");
+    
 
   };
 
