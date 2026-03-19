@@ -115,17 +115,12 @@ Example:
 
 ```html
 <button class="accordion-button">
-
   <span class="accordion-arrow">▸</span>
-
   Cat Facts
-
 </button>
 
 <div class="accordion-content">
-
   <p>Cats sleep about 16 hours a day.</p>
-
 </div>
 ```
 
@@ -181,27 +176,21 @@ Here is the complete script:
 
 ```javascript
 // find all accordion buttons
-
 var buttons = document.querySelectorAll(".accordion-button");
 
 // loop through each button
-
 buttons.forEach(function(button){
 
   button.onclick = function(){
 
     // find the content that comes after the button
-
     var content = this.nextElementSibling;
 
     // toggle the open class on the content
-
     content.classList.toggle("open");
 
     // rotate the arrow
-
     this.classList.toggle("open");
-
   };
 
 });
@@ -338,17 +327,11 @@ The accordion animation is created with CSS.
 
 ```css
 .accordion-content{
-
   max-height:0;
-
   overflow:hidden;
-
   background:#f7f7f7;
-
   padding:0 1rem;
-
   transition:max-height .4s ease;
-
 }
 ```
 
@@ -364,11 +347,8 @@ In the closed state:
 
 ```css
 .accordion-content.open{
-
   max-height:200px;
-
   padding:1rem;
-
 }
 ```
 
@@ -394,13 +374,9 @@ The CSS for the arrow is:
 
 ```css
 .accordion-arrow{
-
   display:inline-block;
-
   margin-right:.5rem;
-
   transition: transform .3s ease;
-
 }
 ```
 
@@ -410,9 +386,7 @@ When the button has the class `open`, this rule applies:
 
 ```css
 .accordion-button.open .accordion-arrow{
-
   transform:rotate(90deg);
-
 }
 ```
 
@@ -645,10 +619,10 @@ Try a different arrow or symbol.
 
 For example:
 
-- `▶`
-- `▸`
+- `▷`
+- `❯`
 - `+`
-- `▼`
+- `👉`
 
 ---
 
