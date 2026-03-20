@@ -1,31 +1,30 @@
 // Find all elements with the class "accordion-button".
 // This creates a list of all accordion buttons on the page.
-var accordionButtons = document.querySelectorAll(".accordion-button");
+var accordionButtons = 
 
 // Loop through each accordion button in the list.
 // The name "button" means the current button being worked on.
 accordionButtons.forEach(function(button) {
 
   // When this button is clicked, run the function below.
-  button.onclick = function() {
+   = function() {
 
     // Find the element that comes right after the clicked button in the HTML.
     // In this accordion, that next element is the content panel.
-    var content = this.nextElementSibling;
+    var content = 
 
     // Add or remove the "open" class on the content panel.
     // If the class is already there, remove it.
     // If the class is not there, add it.
-    content.classList.toggle("open");
+    
 
     // Add or remove the "open" class on the button itself.
-    // This is often used to rotate an arrow icon or change the button style.
-    this.classList.toggle("open");
+    // This is used to rotate the arrow icon or change the button style.
+    
 
   };
 
 });
-
 
 /*
 ==================================================
