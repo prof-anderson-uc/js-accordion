@@ -21,7 +21,7 @@
   cursor: pointer; /* Changes the cursor to a pointer when hovering */
   width: 100%; /* Makes the button stretch across the full width */
   margin-top: 0.5rem; /* Adds space above each button */
-  transition: all 1s ease; /* Smoothly animates changes to the button */
+  transition: all 1s ease; /* Speed of hover animation */
 }
 
 .accordion-button:hover {
@@ -34,7 +34,7 @@
 .accordion-arrow {
   display: inline-block; /* Allows arrow to behave more like a block for animation */
   margin-right: 0.5rem; /* Adds space between the arrow and text */
-  transition: all 0.3s ease; /* Smoothly animates rotation */
+  transition: all 0.3s ease; /* Speed of arrow rotation animation */
 }
 
 
@@ -54,9 +54,9 @@
   border: 1px solid silver; /* Border around the content area */
   border-top: none; /* Removes top border so it connects more cleanly */
   padding: 0 1rem; /* Left and right padding when closed */
-  transition: all 0.5s ease; /* Smoothly animates opening and closing */
   border-bottom-left-radius: 1rem; /* Rounds the bottom corners */
   border-bottom-right-radius: 1rem; /* Rounds the bottom corners */
+  transition: all 0.5s ease; /* Speed of open/close animation */
 }
 
 
